@@ -33,7 +33,13 @@ class App extends Component {
       />
     ));
 
-    return <div>{films}</div>;
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">{films}</div>
+        </div>
+      </div>
+    );
   }
 }
 
