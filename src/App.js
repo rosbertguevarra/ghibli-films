@@ -2,13 +2,18 @@ import React, { Component } from "react";
 import Films from "./Films";
 import Axios from "axios";
 
-const URL = "https://ghibliapi.herokuapp.com/films";
+const alignGrid = {
+  display: "flex",
+  flexWrap: "wrap"
+};
 
+const URL = "https://ghibliapi.herokuapp.com/films";
 class App extends Component {
   state = {
-    data: []
+    data: [],
+    searchTerm: ""
+    
   };
-
   componentDidMount() {
     Axios.get(URL)
       .then(res => {
@@ -20,6 +25,10 @@ class App extends Component {
         console.log(error);
       });
   }
+  handleSearchTermChange = event => {
+    this.setState({ searchTerm: event.target.value });
+  };
+
   render() {
     const films = this.state.data.map(film => (
       <Films
@@ -31,16 +40,15 @@ class App extends Component {
         release_date={film.release_date}
         rt_score={film.rt_score}
       />
-    ));
 
-    return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">{films}</div>
-        </div>
-      </div>
-    );
+    
+    ));
+  
+    return <div style={alignGrid}>{films}</div>;
   }
 }
+
+
+
 
 export default App;
