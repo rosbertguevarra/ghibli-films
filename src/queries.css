@@ -1,0 +1,66 @@
+
+@media only screen and (max-width: 1216px) {
+    .films {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 30% !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .films {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 950px) {
+    .films {
+        display: flex;
+        flex-wrap:  wrap;
+        
+    }
+    .card {
+        width: 40% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .card{
+        width: 50% !important;
+       
+        
+    }
+    .films {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.films {
+        display: flex;
+
+    }
+    .card {
+        width: 60% !important;
+    }
+}

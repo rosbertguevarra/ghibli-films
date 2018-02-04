@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Films from "./Films";
 import Axios from "axios";
-import Spinner from "react-spinkit"
+import Spinner from "react-spinkit";
+import "./App.css"
 
 const alignGrid = {
   display: "flex",
@@ -83,7 +84,7 @@ class App extends Component {
 
       return (
         <div>
-          <div style={alignSearch}>
+          <div className="search" style={alignSearch}>
             Search:  <input style={styleInput}
               onChange={this.handleSearchTermChange}
               value={this.state.searchTerm}
@@ -91,7 +92,7 @@ class App extends Component {
               placeholder="Search Ghibli Film"
             />
           </div>
-          <div style={alignGrid}>{films}</div>
+          <div className="films"style={alignGrid}>{films}</div>
         </div>
       )
     }
