@@ -5,10 +5,6 @@ import { Container, Row, Col } from "reactstrap";
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button, Badge } from 'reactstrap';
 
-// const styledCard = {
-//   width: "25%",
-//   margin: "50px"
-// }
 
 const Films = props => (
   
