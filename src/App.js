@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Films from "./Films";
 import Axios from "axios";
 import Spinner from "react-spinkit";
+import Navbar from "./Navbar";
 import "./App.css"
 
 const alignGrid = {
@@ -62,6 +63,7 @@ class App extends Component {
     if (!isLoaded) {
       return (
         <div>
+          <Navbar />
           <div style={alignStyle}>
             <h1>Loading</h1>
           </div>
@@ -84,6 +86,7 @@ class App extends Component {
 
       return (
         <div>
+          <Navbar />
           <div className="search" style={alignSearch}>
             Search:  <input style={styleInput}
               onChange={this.handleSearchTermChange}
