@@ -31,6 +31,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rosbertguevarra/ghibli-films/issues"
-  },
-  "homepage": "https://github.com/rosbertguevarra/ghibli-films#readme"
+  }
+  
 }
