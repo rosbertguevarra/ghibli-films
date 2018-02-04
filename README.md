@@ -2,6 +2,8 @@
 
 Created using Facebook's [create-react-app](https://reactjs.org/docs/add-react-to-a-new-app.html)
 
+[Live Demo](https://ghiblifilms.herokuapp.com/)
+
 ## Installation 
 
 run `npm install` to install the required dependencies.
